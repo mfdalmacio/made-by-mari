@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made by Mari</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="nav-container">
+                <a class="nav-brand" href="#">
+                    <img src="ham.gif" width="50" height="50" alt="brand logo" class="brand-logo">
+                    <h1 class="title">Made by Mari</h1>
+                </a>
+               
+                <button class="menu-toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </button>
+               
+                <div class="nav-links" id="navbarNav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-me"> About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <h2 class="section-title"><img src="text.gif" class="center"></a></h2>
+        
+        <a href="gallery.html" class="gallery-preview-link">
+            <div class="preview-content shadow-sm">
+                <img src="preview image.png" alt="Artwork Preview" class="preview-image">
+                <div class="preview-text">
+                    <h3>Art Gallery</h3>
+                    <p>Click here to see all my creations!</p>
+                </div>
+            </div>
+        </a>
+        </main>
+
+    <section id="about-me" class="main-content container gallery-container">
+    <h2 class="section-title">ABOUT ME</h2>
+
+    <div class="about-content-wrapper"> 
+        
+        <div class="about-image-column">
+            <img src="mari.png" alt="A picture of Mari" class="profile-image">
+        </div>
+
+        <div class="resume-wrapper">
+            
+            <div class="resume-column">
+                <div class="resume-section">
+                    <h3 class="section-header">Education</h3>
+                    <div class="entry">
+                        <p class="school"><strong>Far Eastern University Institute of Technology</strong></p>
+                        <p class="program">Bachelor of Multimedia Arts</p>
+                        <p class="detail">With specialization in Animation and Digital Film</p>
+                        <p class="dates">2024 - 2028</p>
+                    </div>
+                </div>
+                
+                <div class="resume-section software-section">
+                    <h3 class="section-header">Softwares</h3>
+                    <div class="software-tags">
+                        <span class="software-tag">Ps</span>
+                        <span class="software-tag">Ai</span>
+                        <span class="software-tag">Canva</span>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3 class="section-header">Skills</h3>
+                                            <ul>
+                            <li>Layout & Typography Design</li>
+                            <li>Photo Manipulation</li>
+                            <li>Photography</li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="resume-column">
+                <div class="resume-section">
+                    <h3 class="section-header">Experience</h3>
+                    
+                    <div class="entry">
+                        <p class="organization"><strong>BMA Student</strong></p>
+                        <p class="dates">2024 - Present</p>
+                    </div>
+                    
+                    <div class="entry">
+                        <p class="organization"><strong>JGMNHS SPA</strong></p>
+                        <p class="role">Media Arts</p>
+                        <ul>
+                            <li>Basic and Advanced Photography</li>
+                            <li>Videography</li>
+                        </ul>
+                        <p class="dates date-range">June 2018 - August 2022</p>
+                    </div>
+
+</section>
+        
+    </section>
+ <section id="contact" class="main-content container gallery-container">
+    <section id="contact" class="main-content container gallery-container">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-info" style="text-align: center; padding-bottom: 30px;">
+            <p>I'd love to hear from you! 🩷</p>
+            <p><strong>Email:</strong> <a href="mailto:marieldalmacio@gmail.com">marieldalmacio@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/m4riel.d" target="_blank">@m4riel.d</a></p>
+            <p><strong>Phone:</strong> +12 345 6789</p>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Made by Mari 2025. All rights reserved ଘ(੭*ˊᵕˋ)੭* ੈ♡‧₊˚🍓</p>
+        </div>
+    </footer>
+    
+    <script>
+        // NAVIGATION TOGGLE FUNCTIONALITY (BURGER MENU)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuma Berry</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="nav-container">
+                <a class="nav-brand" href="#">
+                    <img src="ham.gif" width="50" height="50" alt="brand logo" class="brand-logo">
+                    <h1 class="title">Made by Mari</h1>
+                </a>
+               
+                <button class="menu-toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </button>
+               
+                <div class="nav-links" id="navbarNav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">👤 About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">🎨 Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">☎️ Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <h2 class="section-title"><img src="text.gif" class="center"></a></h2>
+        
+        <div class="item-grid">
+            
+            <div class="grid-col">
+                <div class="card shadow-sm">
+                    <img src="parfait.jpg" class="card-img-top" alt="parfait">
+                    <div class="card-body">
+                        <h5 class="card-title">Good Graces</h5>
+                        <p class="card-text text-muted">Our perfectly balanced Strawberry Parfait. Bright, bubbly, and subtle sweet—a sophisticated twist on a classic pop. Served over ice with a fresh strawberry garnish. It's here to keep you on Good Graces.</p>
+                        <p class="card-price">₱ 250</p>
+                        <button class="btn btn-pink">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-col">
+                <div class="card shadow-sm">
+                    <img src="espresso.jpg" class="card-img-top" alt="espresso">
+                    <div class="card-body">
+                        <h5 class="card-title">That's That Me (Espresso)</h5>
+                        <p class="card-text text-muted">Our signature Espresso shot. Bold, rich, and intensely flavored. It's the reason why he can't sleep. Order it as a single shot, or let us serve it up as a double. You know you need it.</p>
+                        <p class="card-price">₱ 100</p>
+                        <button class="btn btn-pink">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-col">
+                <div class="card shadow-sm">
+                    <img src="strawberry cake.jpg" class="card-img-top" alt="Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Short 'n Sweet</h5>
+                        <p class="card-text text-muted">A classic strawberry shortcake slice. Simple, perfect, and totally unforgettable. Freshly baked vanilla cake layered with sweet strawberry frosting. Short, but definitely sweet.</p>
+                        <p class="card-price">₱ 160</p>
+                        <button class="btn btn-pink">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <section id="gallery-section" class="main-content container gallery-container">
+        <h2 class="section-title">🎨 My Art Works 🖼️</h2>
+        <p style="text-align: center; color: #6c757d;">(This is the content you jump to when clicking 'Gallery')</p>
+        </section>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Made by Mari 2025. All rights reserved ଘ(੭*ˊᵕˋ)੭* ੈ♡‧₊˚🍓</p>
+        </div>
+    </footer>
+    
+    <script>
+        // NAVIGATION TOGGLE FUNCTIONALITY (BURGER MENU)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            // Toggles the 'show' class which is handled by the CSS media query
+            navLinks.classList.toggle('show');
+        });
+        
+        // ADD TO CART BUTTON FUNCTIONALITY
+        const cartButtons = document.querySelectorAll('.btn-pink');
+        
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                const itemName = card.querySelector('.card-title').textContent;
+                const itemPrice = card.querySelector('.card-price').textContent;
+                
+                // Alert for demonstration (replace with actual cart logic)
+                alert(`✅ Added "${itemName}" (${itemPrice}) to the cart!`);
+            });
+        });
+    </script>
+</body>
+</html>
