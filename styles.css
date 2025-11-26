@@ -1,3 +1,124 @@
+@media (max-width: 991px) {
+    
+    /* NAVIGATION & HEADER FIXES */
+    
+    .main-content {
+        margin-top: 80px; 
+    }
+    
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        max-width: 200px; 
+        background-color: #ffb3d9;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-bottom-left-radius: 5px;
+        z-index: 5;
+    }
+    
+    .nav-links.show {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 0;
+        border-bottom: 1px solid #ffb3d9;
+    }
+    
+    /*  MAIN HERO/GALLERY FIXES  */
+    
+   
+    .section-title img[src="text.gif"] {
+        display: none;
+    }
+
+    .gallery-preview-link {
+        margin: 20px auto; 
+        max-width: 90%; 
+    }
+    
+
+    .preview-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0; 
+    }
+
+    .preview-image {
+        width: 100%; 
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid #ff99bb; 
+    }
+
+    .preview-text {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+    /*  ABOUT ME */
+    .about-content-wrapper { 
+        flex-direction: column; 
+        padding: 15px;
+        max-width: 95%; 
+        margin: 20px auto;/
+    }
+    
+
+    .about-image-column {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 250px !important; 
+        height: auto; 
+        display: block;
+        margin: 0 auto 20px auto; 
+    }
+    
+    .resume-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .resume-column {
+        min-width: 100%;
+    }
+    
+    .resume-section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .resume-section:last-child {
+        border-bottom: none;
+    }
+    
+    .software-tags {
+        justify-content: center; 
+    }
+    .section-title {
+        text-align: center;
+    }
+}
 /* RESUME SECTION STYLES  */
 
 .about-content-wrapper {
