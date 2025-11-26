@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuma Berry</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="nav-container">
+                <a class="nav-brand" href="#">
+                    <img src="ham.gif" width="50" height="50" alt="brand logo" class="brand-logo">
+                    <h1 class="title">Made by Mari</h1>
+                </a>
+               
+                <button class="menu-toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </button>
+               
+                <div class="nav-links" id="navbarNav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-me"> About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <h2 class="section-title"><img src="text.gif" class="center"></a></h2>
+        
+        <a href="gallery.html" class="gallery-preview-link">
+            <div class="preview-content shadow-sm">
+                <img src="preview image.png" alt="Artwork Preview" class="preview-image">
+                <div class="preview-text">
+                    <h3>Art Gallery</h3>
+                    <p>Click here to see all my creations!</p>
+                </div>
+            </div>
+        </a>
+        </main>
+
+    <section id="about-me" class="main-content container gallery-container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p style="text-align: center; color: #6c757d;">(This is the content you jump to when clicking 'About ME')</p>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Made by Mari 2025. All rights reserved ଘ(੭*ˊᵕˋ)੭* ੈ♡‧₊˚🍓</p>
+        </div>
+    </footer>
+    
+    <script>
+        // NAVIGATION TOGGLE FUNCTIONALITY (BURGER MENU)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
